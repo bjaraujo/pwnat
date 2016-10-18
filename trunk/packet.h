@@ -7,6 +7,7 @@
   	#include	<sys/unistd.h>
   	#include	<sys/types.h>
   	#include	<sys/socket.h>
+	#include 	<sys/time.h>
   	#include	<netinet/in.h>
 	#include 	<limits.h>
   	#include	<arpa/inet.h>
@@ -18,8 +19,8 @@
 	#include	<pwd.h>
 	#include	<grp.h>
 #endif /* !WIN32 */
+
 	#include	<stdarg.h>
-	#include	<io.h>
   	#include	<stdio.h>
   	#include	<stdlib.h>
   	#include	<string.h>
@@ -28,6 +29,7 @@
   	#include	<stdint.h>
 
 #ifdef WIN32
+	#include    <io.h>
 	#include    <winsock2.h>
 	typedef int socklen_t;
 	typedef uint32_t in_addr_t;
